@@ -1,0 +1,101 @@
+body{
+  margin: 0;
+  background-color: #ECEFF1;
+  font-family: sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.testimonial {
+  margin: 100px auto;
+  padding: 100px 0;
+
+
+  position: relative;
+  
+  border: 1px solid #DDD;
+  outline: 1px solid #ccc;
+  outline-offset: 3px;
+}
+
+.testimonial .container {
+  width: 80%;
+  margin: auto;
+}
+
+.testimonial::before,
+.testimonial::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+
+.testimonial::before {
+  left: 0;
+  background-color: #4CAF50;
+}
+
+.testimonial::after {
+  left: 50%;
+  background-color: #333;
+}
+
+.testimonial .testim-title {
+  text-transform: capitalize;
+  color: #FFF;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.testimonial .testem-boxs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial .testem-boxs .test-box {
+  width: calc(90% / 3);
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.testimonial .testem-boxs .test-box p {
+  color: #252525b3;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.testimonial .testem-boxs .test-box h4 {
+  margin: 20px 0 0 0;
+}
+
+.testimonial .testem-boxs .test-box .img-box{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: #009688;
+  overflow: hidden;
+
+  right: -25px;
+  bottom: -25px;
+
+  padding: 5px;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.testimonial .testem-boxs .test-box .img-box img {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
