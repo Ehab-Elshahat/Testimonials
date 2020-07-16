@@ -99,3 +99,23 @@ body{
   border-top-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
+
+@media(max-width: 767px) {
+
+  .testimonial .testim-title {
+    text-align: center;
+  }
+
+  .testimonial .testem-boxs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial .testem-boxs .test-box {
+    width: 100%;
+  }
+
+  .testimonial .testem-boxs .test-box:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
